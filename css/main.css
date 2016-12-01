@@ -25,15 +25,31 @@ header
   padding: 0;
 }
 
+.header-left
+{
+  width: 50%;
+  height: 48px;
+  margin: 0;
+  padding: 10px 20px;
+  float: left;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
 .social-btn
 {
-  width: 100px;
   float: left;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .phone-number
 {
   float: left;
+  font-size: 14px;
+  line-height: 23px;
+  font-weight: 300;
+  margin-left: 40px;
 }
 
 .account-btn
@@ -42,21 +58,12 @@ header
    float: left;
 }
 
-.header-left
-{
-  width: 50%;
-  margin: 0;
-  padding: 0;
-  float: left;
-  box-sizing: border-box;
-  background-color: red;
-}
-
 .header-right
 {
   width: 50%;
+  height: 48px;
   margin: 0;
-  padding: 0;
+  padding: 10px 20px;
   float: left;
   box-sizing: border-box;
   background-color: blue;
@@ -98,4 +105,13 @@ header
   width: 100%;
   margin: 0 auto;
   padding: 0;
+}
+
+/*(min-width: 0px) - powiększamy ekran, zmienia się nasza szerokość (min-device-width: 0px) - powiększamy ekran, dalej przeglądarka odczytuje naszą podstawową szerokość*/
+@media only screen and (min-width: 1200px)
+{
+  .header-left
+  {
+    padding: 10px 100px;
+  }
 }
