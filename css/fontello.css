@@ -59,7 +59,7 @@
 .icon-facebook:before { content: '\f30c'; font-size: 18px; margin-top: 1px;} /* '' */
 .icon-gplus:before { content: '\f30f'; font-size: 18px; margin-top: 1px;} /* '' */
 .icon-linkedin:before { content: '\f318'; font-size: 18px; margin-top: 1px;} /* '' */
-.icon-twitter:hover { color: #55acee;}  /* '' */
-.icon-facebook:hover { color: #3b5998;}  /* '' */
-.icon-gplus:hover { color: #dd4b39;}  /* '' */
-.icon-linkedin:hover { color: #007bb5;} /* '' */
+.icon-twitter:hover { color: white; background-color: #55acee; cursor: pointer; border-radius: 3px; transition: 0.2s;}  /* '' */
+.icon-facebook:hover { color: white; background-color: #3b5998; cursor: pointer; border-radius: 3px; transition: 0.2s;}  /* '' */
+.icon-gplus:hover { color: white; background-color: #dd4b39; cursor: pointer; border-radius: 3px; transition: 0.2s;}  /* '' */
+.icon-linkedin:hover { color: white; background-color: #007bb5; cursor: pointer; border-radius: 3px; transition: 0.2s;} /* '' */
