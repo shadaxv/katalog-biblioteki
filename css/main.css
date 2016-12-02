@@ -175,4 +175,16 @@ ul.account-menu li a:hover {background-color: #555;}
   }
 }
 
-
+.main-slider
+{
+  background-image: url(../img/slider.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  height: 350px;
+  color: white;
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 336px;
+}
