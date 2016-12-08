@@ -119,7 +119,8 @@
 
   ul.account-menu li {float: left;}
 
-  ul.account-menu li a {
+  ul.account-menu li a
+  {
       display: inline-block;
       color: #666;
       text-align: center;
@@ -169,7 +170,6 @@
     line-height: 60px;
     font-size: 16px;
     font-weight: 200;
-    padding-left: 10px;
   }
 
   .search-input
@@ -222,6 +222,21 @@
   }
 
   .search-input input[type="text"]::-webkit-input-placeholder
+  {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .search-input input[type="text"]:hover::-moz-input-placeholder
+  {
+    color: #666;
+  }
+
+  .search-input input[type="text"]:focus::-moz-input-placeholder
+  {
+    color: #666;
+  }
+
+  .search-input input[type="text"]::-moz-input-placeholder
   {
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
@@ -396,29 +411,18 @@
 
   ul.slider-button li a:hover {border: 2px solid #fc3;}
 
+  .noentry
+  {
+    display: none;
+  }
 } /* Define mobile styles */
 
-@media only screen and (max-width: 360px)
-{
-  .phone-number
-  {
-    font-size: 11px;
-    margin-left: 10px;
-  }
-  .phone-number span
-  {
-    float: none;
-    display: block;
-    line-height: 16px;
-  }
-}
-
-@media only screen and (min-width: 361px) and (max-width: 640px)
+@media only screen and (max-width: 640px)
 {
 
-  .phone-number
+  /*.phone-number
   {
-    font-size: 11px;
+    font-size: 3vw;
     margin-left: 8px;
   }
   .logo
@@ -439,9 +443,153 @@
   .account-nav
   {
     height: 104px;
+  }*/
+
+  .header-left
+  {
+    width: 100%;
+    text-align: center;
+  }
+  .phone-number
+  {
+    margin-left: 5px;
+    float: left;
+    width: calc(100% - 128px);
+    text-align: center;
+  }
+  .social-btn
+  {
+    float: left;
+  }
+  .header-right
+  {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+  }
+  .header-right ul
+  {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  .header-right ul li
+  {
+    flex: 1 auto;
+    margin: auto;
+    text-align: center;
+  }
+  .header-right ul li a
+  {
+
+  }
+  .account-btn
+  {
+    width: 100%;
+  }
+  ul.account-menu li a
+  {
+    margin: 0;
+  }
+  .logo
+  {
+    margin-left: 15px;
+  }
+  .logo-div span
+  {
+    display: none !important;
+  }
+  ul.menu
+  {
+    margin-left: 20px;
+  }
+  .menu-div ul
+  {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+  .menu-div ul li
+  {
+    flex: 1 auto;
+    margin: auto;
+    text-align: center;
+    margin: 3px;
+  }
+  .menu-div ul li a
+  {
+    width: 100%;
+    box-sizing: border-box;
   }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
+@media only screen and (max-width: 450px)
+{
+  .phone-number
+  {
+    margin-left: 5px;
+  }
+  .phone-number span
+  {
+    float: none;
+    display: block;
+    line-height: 16px;
+    text-align: center;
+  }
+  .header-left
+  {
+    padding: 10px 10px;
+  }
+  .logo
+  {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 289px)
+{
+  .container
+  {
+    display: none;
+  }
+  .noentry
+  {
+    background-color: #fc3;
+    display: block;
+    height: 100vh;
+    width: 100%;
+  }
+  .noentrymsg
+  {
+    margin: 0 auto;
+    font-size: 28px;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    color: #252525;
+    overflow:hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+  }
+}
+
+@media only screen and (max-width: 900px)
+{
+  .logo-div span
+  {
+    float: none;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+    font-size: 15px;
+  }
+}
  /*Medium screens*/
 @media only screen and (min-width: 641px)
 {
@@ -465,19 +613,24 @@
   }
   .header-left
   {
-    width: auto;
-    float: left;
+    width: 100%;
+    float: none;
+    margin: 0 auto;
   }
-
   .header-right
   {
     width: auto;
-    float: right;
+    float: none;
+    margin: 0 auto;
   }
   .phone-number span
   {
     float: left;
     display: block;
+  }
+  ul.menu
+  {
+    margin-left: 20px;
   }
 } /* min-width 641px, medium screens */
 
@@ -490,15 +643,19 @@
   {
     padding: 15px 50px;
     height: 62px;
+    width: auto;
+    float: left;
   }
   .header-right
   {
     padding: 15px 50px;
     height: 62px;
+    width: auto;
+    float: right;
   }
   .phone-number
   {
-    margin-left: 20px;
+    margin-left: 40px;
   }
   .logo
   {
@@ -507,6 +664,10 @@
   .account-nav
   {
     height: 62px;
+  }
+  ul.menu
+  {
+    margin-left: 50px;
   }
 
 } /* min-width 1025px, large screens */
@@ -533,6 +694,10 @@
   .account-nav
   {
     height: 62px;
+  }
+  ul.menu
+  {
+    margin-left: 120px;
   }
 } /* min-width 1441px, xlarge screens */
 
