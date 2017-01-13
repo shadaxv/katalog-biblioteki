@@ -134,7 +134,7 @@
       margin-right: 4px;
   }
 
-  ul.account-menu li a:hover {color: #000;}
+  ul.account-menu li a:hover, ul.account-menu li a:focus {color: #000;}
 
   .search-nav
   {
@@ -173,6 +173,11 @@
     font-weight: 200;
   }
 
+  .logo-div a:focus span
+  {
+    font-weight: 400;
+  }
+
   .search-input
   {
     width: 40%;
@@ -191,7 +196,7 @@
     box-sizing: border-box;
     display: block;
     height: 40px;
-    padding: 12px 40px;
+    padding: 6px 40px;
     margin: 10px auto;
     font-size: 16px;
     border: 0;
@@ -308,7 +313,7 @@
     width: 100%;
   }
 
-  ul.menu li:hover a div
+  ul.menu li:hover a div, ul.menu li a:focus
   {
     color: white;
     background: #fc3;

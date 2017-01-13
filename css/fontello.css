@@ -67,3 +67,8 @@
 .icon-facebook:hover { color: white; background-color: #3b5998; cursor: pointer; border-radius: 3px; transition: 0.2s;}  /* '' */
 .icon-gplus:hover { color: white; background-color: #dd4b39; cursor: pointer; border-radius: 3px; transition: 0.2s;}  /* '' */
 .icon-linkedin:hover { color: white; background-color: #007bb5; cursor: pointer; border-radius: 3px; transition: 0.2s;} /* '' */
+
+.social-btn a:focus .icon-twitter { color: white; background-color: #55acee; cursor: pointer; border-radius: 3px; transition: 0.2s;}  /* '' */
+.social-btn a:focus .icon-facebook { color: white; background-color: #3b5998; cursor: pointer; border-radius: 3px; transition: 0.2s;}  /* '' */
+.social-btn a:focus .icon-gplus { color: white; background-color: #dd4b39; cursor: pointer; border-radius: 3px; transition: 0.2s;}  /* '' */
+.social-btn a:focus .icon-linkedin { color: white; background-color: #007bb5; cursor: pointer; border-radius: 3px; transition: 0.2s;} /* '' */

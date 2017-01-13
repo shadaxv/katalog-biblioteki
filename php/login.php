@@ -88,7 +88,7 @@
 					<div style="clear; both"></div>
 
 					<div class="search-nav">
-						<div class="logo-div"><a href="#"><div class="logo"></div><span style="padding-left: 5px;">&nbsp;BIBLIOTEKA&nbsp;</span><span>ON-LINE</span></a></div>
+						<div class="logo-div"><a href="../index.php"><div class="logo"></div><span style="padding-left: 5px;">&nbsp;BIBLIOTEKA&nbsp;</span><span>ON-LINE</span></a></div>
 						<div class="search-input"><input type="text" placeholder="Wpisz tytuł, nazwę autora, rok wydania lub wydawnictwo"><a href="#"></a></div>
 						<div class="order">order</div>
 					</div>
@@ -120,8 +120,6 @@
 						</div>
 					</div>
 				</div>
-
-        container
 
 		</div>
 

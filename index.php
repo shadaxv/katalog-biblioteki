@@ -115,7 +115,7 @@
     					“Dobra książka to rodzaj alkoholu - też idzie do głowy”<span style="font-size: 12px; font-weight: 600;"> XD</span><br>
     					<span style="font-weight: 400; font-size: 24px">Magdalena Samozwaniec</span>
               <ul class="slider-button">
-                <li><a href="">ZAŁÓŻ KONTO</a></li>
+                <li><a href="php/register.php">ZAŁÓŻ KONTO</a></li>
               </ul>
             </div>
 					</div>
