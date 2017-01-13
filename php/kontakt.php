@@ -76,8 +76,8 @@
 								<div class="account-btn">
 									<ul class="account-menu">
 										<li style="display: none;"><a href="">Witaj $usernname</a></li>
-										<li><a href="" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
-										<li><a href="">ZALOGUJ SIĘ</a></li>
+										<li><a href="register.php" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
+										<li><a href="login.php">ZALOGUJ SIĘ</a></li>
 									</ul>
 									<div style="clear; both"></div>
 								</div>
