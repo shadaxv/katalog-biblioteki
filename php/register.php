@@ -76,8 +76,8 @@
 								<div class="account-btn">
 									<ul class="account-menu">
 										<li style="display: none;"><a href="">Witaj $usernname</a></li>
-										<li><a href="#" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
-										<li><a href="login.php">ZALOGUJ SIĘ</a></li>
+										<li><a href="register.php" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
+										<li><a href="">ZALOGUJ SIĘ</a></li>
 									</ul>
 									<div style="clear; both"></div>
 								</div>
@@ -88,7 +88,7 @@
 					<div style="clear; both"></div>
 
 					<div class="search-nav">
-						<div class="logo-div"><a href="../index.php"><div class="logo"></div><span style="padding-left: 5px;">&nbsp;BIBLIOTEKA&nbsp;</span><span>ON-LINE</span></a></div>
+						<div class="logo-div"><a href="#"><div class="logo"></div><span style="padding-left: 5px;">&nbsp;BIBLIOTEKA&nbsp;</span><span>ON-LINE</span></a></div>
 						<div class="search-input"><input type="text" placeholder="Wpisz tytuł, nazwę autora, rok wydania lub wydawnictwo"><a href="#"></a></div>
 						<div class="order">order</div>
 					</div>
@@ -101,7 +101,7 @@
 						  <li class="hvr-shutter-out-vertical"><a href="kontakt.php"><div>KONTAKT</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="partner.php"><div>WSPÓŁPRACA</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="onas.php"><div>O NAS</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="sklep.php"><div>SKLEP</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="#"><div>SKLEP</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="katalog.php"><div>KATALOG</div></a></li>
 						</ul>
 					</div>
@@ -120,13 +120,94 @@
             </div>
 					</div>
 				</div>
+						<form class="register-form">
+									<label for="Imie">Imie: </label>
+									<input type="text" name="FirstName" id="Imie" placeholder="Imię"><div style="clear; both"></div>
+									<label for="nazwisko"> Nazwisko: </label><input type="text" name="LastName" id="nazwisko"placeholder="Nazwisko"><div style="clear; both"></div>
+									<label for="nazwa_uzytkownika">Nazwa użytkownika: </label><input type="text" name="Nickname" id="nazwa_uzytkownika"  placeholder="Nazwa użytkownika"><div style="clear; both"></div>
+									<label for="haslo">Hasło:  </label><input type="password" name="Password" id="haslo" placeholder="Hasło"><div style="clear; both"></div>
+									<label for="powtorz_haslo">Powtórz hasło: </label><input type="password" name="Password" id="powtorz_haslo"  placeholder="Powtórz hasło"><div style="clear; both"></div>
+									<label for="data">Data urodzenia: </label><input type="date" id="data" name="kalendarz" ><div style="clear; both"></div>
+									<label for="mezczyzna">Mężczyzna</label>
+									<input type="radio" name="Płeć" id="mezczyzna" value="Mężczyzna">
+									<label for="kobieta">Kobieta</label>
+					  			<input type="radio" name="Płeć" id="kobieta" value="Kobieta"><div style="clear; both"></div>
+									<label for="e-mail">E-mail: </label><input type="email" name="email" id="e-mail"placeholder="E-mail"><div style="clear; both"></div>
+									<label for="numer_telefonu">Numer telefonu: </label><input type="tel" id="numer_telefonu" placeholder="Numer telefonu" ><div style="clear; both"></div>
+									<label for="lokalizacja">Lokalizacja: </label><input type="text" name="place" id="lokalizacja" placeholder="Lokalizacja"> <div style="clear; both"></div>
+					</form>
 
-        container
+					<div class="rejestracja">
+						<h2>Google Material Design in CSS3<small>Inputs</small></h2>
 
-		</div>
+<form>
 
-		<div class="noentry"><div class="noentrymsg">Nie obsługujemy urządzeń poniżej 290px <br> Kup sobie normalny telefon biedaku XDD</div></div>
+	<div class="group">
+		<input type="text" required>
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Imie</label>
+	</div>
 
-	</body>
+	<div class="group">
+		<input type="text" required>
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Nazwisko</label>
+	</div>
 
+	<div class="group">
+		<input type="text" required>
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Nazwa użytkownika</label>
+	</div>
+
+	<div class="group">
+		<input type="password" required>
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Hasło</label>
+	</div>
+
+	<div class="group">
+		<input type="password" required>
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Powtórz hasło</label>
+	</div>
+
+	<div class="group">
+		<input type="date" required>
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Data urodzenia</label>
+	</div>
+
+	<div class="group">
+		<input type="email" required>
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>E-mail</label>
+	</div>
+
+	<div class="group">
+		<input type="tel" required>
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Numer telefonu</label>
+	</div>
+
+	<div class="group">
+		<input type="text" required>
+		<span class="highlight"></span>
+		<span class="bar"></span>
+		<label>Lokalizacja</label>
+	</div>
+
+
+
+
+</form>
+					</div>
 </html>
