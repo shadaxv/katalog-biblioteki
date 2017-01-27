@@ -52,7 +52,7 @@
 
 	<body>
 
-		<div class="container">
+		<div class="container" >
 
 				<header>
 
@@ -109,105 +109,79 @@
 
 				</header>
 
-				<div class="main-slider">
-					<div class="slider-shadow">
-            <div class="slider-text">
-    					“Dobra książka to rodzaj alkoholu - też idzie do głowy”<span style="font-size: 12px; font-weight: 600;"> XD</span><br>
-    					<span style="font-weight: 400; font-size: 24px">Magdalena Samozwaniec</span>
-              <ul class="slider-button">
-                <li><a href="">ZAŁÓŻ KONTO</a></li>
-              </ul>
-            </div>
-					</div>
+
+				<div class="register-slider">
+				<div class="register" >
+
+						<form class="register-form"  >
+
+
+				<div class="group">
+					<input class="register-input" type="text" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="label-register">Imie</label>
 				</div>
-						<form class="register-form">
-									<label for="Imie">Imie: </label>
-									<input type="text" name="FirstName" id="Imie" placeholder="Imię"><div style="clear; both"></div>
-									<label for="nazwisko"> Nazwisko: </label><input type="text" name="LastName" id="nazwisko"placeholder="Nazwisko"><div style="clear; both"></div>
-									<label for="nazwa_uzytkownika">Nazwa użytkownika: </label><input type="text" name="Nickname" id="nazwa_uzytkownika"  placeholder="Nazwa użytkownika"><div style="clear; both"></div>
-									<label for="haslo">Hasło:  </label><input type="password" name="Password" id="haslo" placeholder="Hasło"><div style="clear; both"></div>
-									<label for="powtorz_haslo">Powtórz hasło: </label><input type="password" name="Password" id="powtorz_haslo"  placeholder="Powtórz hasło"><div style="clear; both"></div>
-									<label for="data">Data urodzenia: </label><input type="date" id="data" name="kalendarz" ><div style="clear; both"></div>
-									<label for="mezczyzna">Mężczyzna</label>
-									<input type="radio" name="Płeć" id="mezczyzna" value="Mężczyzna">
-									<label for="kobieta">Kobieta</label>
-					  			<input type="radio" name="Płeć" id="kobieta" value="Kobieta"><div style="clear; both"></div>
-									<label for="e-mail">E-mail: </label><input type="email" name="email" id="e-mail"placeholder="E-mail"><div style="clear; both"></div>
-									<label for="numer_telefonu">Numer telefonu: </label><input type="tel" id="numer_telefonu" placeholder="Numer telefonu" ><div style="clear; both"></div>
-									<label for="lokalizacja">Lokalizacja: </label><input type="text" name="place" id="lokalizacja" placeholder="Lokalizacja"> <div style="clear; both"></div>
-					</form>
 
-					<div class="rejestracja">
-						<h2>Google Material Design in CSS3<small>Inputs</small></h2>
+				<div class="group">
+					<input class="register-input" type="text" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="label-register" >Nazwisko</label>
+				</div>
 
-<form>
+				<div class="group">
+					<input class="register-input" type="text" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="label-register">Nazwa użytkownika</label>
+				</div>
 
-	<div class="group">
-		<input type="text" required>
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Imie</label>
-	</div>
+				<div class="group">
+					<input class="register-input" type="password" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="label-register" >Hasło</label>
+				</div>
 
-	<div class="group">
-		<input type="text" required>
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Nazwisko</label>
-	</div>
+				<div class="group">
+					<input class="register-input" type="password" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="label-register" >Powtórz hasło</label>
+				</div>
 
-	<div class="group">
-		<input type="text" required>
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Nazwa użytkownika</label>
-	</div>
+				<div class="group">
+					<input class="register-input" type="text" placeholder=" " onfocus="(this.type='date')" onblur="(this.type='text')" id="input-data" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="label-register" >Data</label>
+				</div>
 
-	<div class="group">
-		<input type="password" required>
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Hasło</label>
-	</div>
+				<div class="group">
+					<input class="register-input" type="email" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="label-register" >E-mail</label>
+				</div>
 
-	<div class="group">
-		<input type="password" required>
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Powtórz hasło</label>
-	</div>
+				<div class="group">
+					<input class="register-input" type="tel" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="label-register">Numer telefonu</label>
+				</div>
 
-	<div class="group">
-		<input type="date" required>
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Data urodzenia</label>
-	</div>
-
-	<div class="group">
-		<input type="email" required>
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>E-mail</label>
-	</div>
-
-	<div class="group">
-		<input type="tel" required>
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Numer telefonu</label>
-	</div>
-
-	<div class="group">
-		<input type="text" required>
-		<span class="highlight"></span>
-		<span class="bar"></span>
-		<label>Lokalizacja</label>
-	</div>
+				<div class="group">
+					<input class="register-input" type="text" required>
+					<span class="highlight"></span>
+					<span class="bar"></span>
+					<label class="label-register">Lokalizacja</label>
+				</div>
 
 
 
 
-</form>
-					</div>
-</html>
+			</form>
+								</div>
+			</html>
