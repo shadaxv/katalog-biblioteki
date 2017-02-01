@@ -52,7 +52,7 @@
 
 	<body>
 
-		<div class="container" >
+		<div class="container">
 
 				<header>
 
@@ -109,79 +109,75 @@
 
 				</header>
 
-
 				<div class="register-slider">
-				<div class="register" >
+					<div class="register">
+						<form class="register-form">
 
-						<form class="register-form"  >
+							<div class="group">
+								<input class="register-input" type="text" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register">Imie</label>
+							</div>
 
+							<div class="group">
+								<input class="register-input" type="text" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register" >Nazwisko</label>
+							</div>
 
-				<div class="group">
-					<input class="register-input" type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label class="label-register">Imie</label>
+							<div class="group">
+								<input class="register-input" type="text" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register">Nazwa użytkownika</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="password" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register" >Hasło</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="password" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register" >Powtórz hasło</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="text" placeholder=" " onfocus="(this.type='date')" onblur="(this.type='text')" id="input-data" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register" >Data</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="email" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register" >E-mail</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="tel" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register">Numer telefonu</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="text" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register">Lokalizacja</label>
+							</div>
+						</form>
+					</div>
 				</div>
-
-				<div class="group">
-					<input class="register-input" type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label class="label-register" >Nazwisko</label>
-				</div>
-
-				<div class="group">
-					<input class="register-input" type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label class="label-register">Nazwa użytkownika</label>
-				</div>
-
-				<div class="group">
-					<input class="register-input" type="password" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label class="label-register" >Hasło</label>
-				</div>
-
-				<div class="group">
-					<input class="register-input" type="password" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label class="label-register" >Powtórz hasło</label>
-				</div>
-
-				<div class="group">
-					<input class="register-input" type="text" placeholder=" " onfocus="(this.type='date')" onblur="(this.type='text')" id="input-data" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label class="label-register" >Data</label>
-				</div>
-
-				<div class="group">
-					<input class="register-input" type="email" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label class="label-register" >E-mail</label>
-				</div>
-
-				<div class="group">
-					<input class="register-input" type="tel" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label class="label-register">Numer telefonu</label>
-				</div>
-
-				<div class="group">
-					<input class="register-input" type="text" required>
-					<span class="highlight"></span>
-					<span class="bar"></span>
-					<label class="label-register">Lokalizacja</label>
-				</div>
-
-
-
-
-			</form>
-								</div>
-			</html>
+			</div>
+		</body>
+</html>

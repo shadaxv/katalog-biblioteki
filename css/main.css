@@ -42,8 +42,6 @@
     margin: 0 auto;
     background-color: rgb(237, 239, 237);
     max-width: 1920px;
-
-
   }
 
   header
@@ -509,6 +507,211 @@
   {
     cursor: pointer;
   }
+
+  * {box-sizing: border-box;}
+
+  .rejestracja      {
+    font-family:'Roboto';
+    width:600px;
+    margin:30px auto 0;
+    display:block;
+    background:#FFF;
+    padding:10px 50px 50px;
+    box-sizing: border-box;
+  }
+  .register
+    {
+      margin:20px auto;
+      width:500px;
+      text-align: center;
+      background-color: rgba(0,0,0,0.7);
+      border-radius: 12px;
+      border: 2px solid black;
+
+    }
+
+  .register-form
+  {
+    display: inline-block;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+
+  .register-slider
+  {
+
+    width: 100%;
+    background: url(../img/slider.jpg);
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+
+
+  /* form starting stylings ------------------------------- */
+  .group            {
+    position:relative;
+    margin-bottom:30px;
+    margin-top:20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .register-input               {
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    border-bottom:1px solid #757575;
+
+  }
+  .register-input:focus         { outline:none; }
+
+  /* LABEL ======================================= */
+  .label-register              {
+    color:#999;
+    font-size:18px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:5px;
+    top:10px;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+  }
+
+  /* active state */
+  .register-input:focus ~ .label-register,  input:valid ~ .label-register        {
+    top:-20px;
+    font-size:14px;
+    color:#fc3;
+  }
+
+  #input-data:not(:focus):not(:placeholder-shown) ~ .label-register
+  {
+    top:-20px;
+    font-size:14px;
+    color:#fc3;
+  }
+
+  /* BOTTOM BARS ================================= */
+  .bar    { position:relative; display:block; width:300px; }
+  .bar:before, .bar:after     {
+    content:'';
+    height:4px;
+    width:0;
+    bottom:1px;
+    position:absolute;
+    background:#e6ac00;
+    transition:0.2s ease all;
+    -moz-transition:0.2s ease all;
+    -webkit-transition:0.2s ease all;
+  }
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%;
+  }
+
+  /* active state */
+  .register-input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+
+  /* HIGHLIGHTER ================================== */
+  .highlight {
+    position:absolute;
+    height:60%;
+    width:100px;
+    top:25%;
+    left:0;
+    pointer-events:none;
+    opacity:0.5;
+  }
+
+  /* active state */
+  .register-input:focus ~ .highlight {
+    -webkit-animation:inputHighlighter 0.3s ease;
+    -moz-animation:inputHighlighter 0.3s ease;
+    animation:inputHighlighter 0.3s ease;
+  }
+
+  /* ANIMATIONS ================ */
+  @-webkit-keyframes inputHighlighter {
+      from { background:#fc3; }
+    to    { width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+      from { background:#fc3; }
+    to    { width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+      from { background:#fc3; }
+    to    { width:0; background:transparent; }
+  }
+
+  .news-section
+  {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    -webkit-touch-callout: auto; /* iOS Safari */
+    -webkit-user-select: auto; /* Chrome/Safari/Opera */
+    -khtml-user-select: auto; /* Konqueror */
+    -moz-user-select: auto; /* Firefox */
+    -ms-user-select: auto; /* Internet Explorer/Edge */
+    user-select: auto; /* Non-prefixed version, currently not supported by any browser */
+    cursor: text;
+  }
+  .news-article
+  {
+    flex: 1 auto;
+    width: 30%;
+    background-color: white;
+    margin: 20px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-image:url(../img/ulani.jpg);
+    background-repeat: no-repeat;
+
+  }
+
+  .news-article h1
+  {
+    text-align: center;
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 1.5em;
+
+  }
+
+  .news-article img
+  {
+    margin: 0 auto;
+    display: block;
+    max-width: 90%;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently not supported by any browser */
+  }
+
+  .news-article p
+  {
+    padding: 20px;
+    font-size: 1em;
+  }
+
+
 } /* Define mobile styles */
 
 @media only screen and (max-width: 640px)
@@ -617,6 +820,10 @@
   {
     width: 100%;
     box-sizing: border-box;
+  }
+  .news-article
+  {
+    min-width: 80%;
   }
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
@@ -799,159 +1006,3 @@
 
  /*XXLarge screens*/
 @media only screen and (min-width: 1921px) { } /* min-width 1921px, xxlarge screens */
-
-
-
-
-
-
-
-
-* {box-sizing: border-box;}
-
-.rejestracja      {
-  font-family:'Roboto';
-  width:600px;
-  margin:30px auto 0;
-  display:block;
-  background:#FFF;
-  padding:10px 50px 50px;
-  box-sizing: border-box;
-}
-.register
-  {
-    margin:20px auto;
-    width:500px;
-    text-align: center;
-    background-color: rgba(0,0,0,0.7);
-    border-radius: 12px;
-    border: 2px solid black;
-
-  }
-
-.register-form
-{
-  display: inline-block;
-  text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-}
-
-.register-slider
-{
-
-  width: 100%;
-  background: url(../img/slider.jpg);
-  height: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-
-
-
-/* form starting stylings ------------------------------- */
-.group            {
-  position:relative;
-  margin-bottom:30px;
-  margin-top:20px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.register-input               {
-  font-size:18px;
-  padding:10px 10px 10px 5px;
-  display:block;
-  width:300px;
-  border:none;
-  border-bottom:1px solid #757575;
-
-}
-.register-input:focus         { outline:none; }
-
-/* LABEL ======================================= */
-.label-register              {
-  color:#999;
-  font-size:18px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:5px;
-  top:10px;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
-}
-
-/* active state */
-.register-input:focus ~ .label-register,  input:valid ~ .label-register        {
-  top:-20px;
-  font-size:14px;
-  color:#fc3;
-}
-
-#input-data:not(:focus):not(:placeholder-shown) ~ .label-register
-{
-  top:-20px;
-  font-size:14px;
-  color:#fc3;
-}
-
-/* BOTTOM BARS ================================= */
-.bar    { position:relative; display:block; width:300px; }
-.bar:before, .bar:after     {
-  content:'';
-  height:4px;
-  width:0;
-  bottom:1px;
-  position:absolute;
-  background:#e6ac00;
-  transition:0.2s ease all;
-  -moz-transition:0.2s ease all;
-  -webkit-transition:0.2s ease all;
-}
-.bar:before {
-  left:50%;
-}
-.bar:after {
-  right:50%;
-}
-
-/* active state */
-.register-input:focus ~ .bar:before, input:focus ~ .bar:after {
-  width:50%;
-}
-
-/* HIGHLIGHTER ================================== */
-.highlight {
-  position:absolute;
-  height:60%;
-  width:100px;
-  top:25%;
-  left:0;
-  pointer-events:none;
-  opacity:0.5;
-}
-
-/* active state */
-.register-input:focus ~ .highlight {
-  -webkit-animation:inputHighlighter 0.3s ease;
-  -moz-animation:inputHighlighter 0.3s ease;
-  animation:inputHighlighter 0.3s ease;
-}
-
-/* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-    from { background:#fc3; }
-  to    { width:0; background:transparent; }
-}
-@-moz-keyframes inputHighlighter {
-    from { background:#fc3; }
-  to    { width:0; background:transparent; }
-}
-@keyframes inputHighlighter {
-    from { background:#fc3; }
-  to    { width:0; background:transparent; }
-}
