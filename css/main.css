@@ -544,12 +544,17 @@
   {
 
     width: 100%;
-    background: url(../img/slider.jpg);
+    background: url(../img/register.jpg);
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-size: cover;
   }
 
+
+
+
+  /* form starting stylings ------------------------------- */
   .group            {
     position:relative;
     margin-bottom:30px;
@@ -558,18 +563,19 @@
     margin-right: auto;
     text-align: center;
   }
-  .register-input {
+  .register-input               {
     font-size:18px;
     padding:10px 10px 10px 5px;
     display:block;
     width:300px;
     border:none;
     border-bottom:1px solid #757575;
+
   }
+  .register-input:focus         { outline:none; }
 
-  .register-input:focus { outline:none; }
-
-  .label-register {
+  /* LABEL ======================================= */
+  .label-register              {
     color:#999;
     font-size:18px;
     font-weight:normal;
@@ -581,6 +587,27 @@
     -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
   }
+  .button-register        {
+    border: 1px solid white;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    position:relative;
+    background-color: transparent;
+    text-transform:uppercase;
+  }
+  .button-register:hover
+  {
+    border: 2px solid #fc3;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 9px;
+
+  }
+
+
 
   /* active state */
   .register-input:focus ~ .label-register,  input:valid ~ .label-register        {
@@ -596,6 +623,7 @@
     color:#fc3;
   }
 
+  /* BOTTOM BARS ================================= */
   .bar    { position:relative; display:block; width:300px; }
   .bar:before, .bar:after     {
     content:'';
@@ -615,10 +643,12 @@
     right:50%;
   }
 
+  /* active state */
   .register-input:focus ~ .bar:before, input:focus ~ .bar:after {
     width:50%;
   }
 
+  /* HIGHLIGHTER ================================== */
   .highlight {
     position:absolute;
     height:60%;
@@ -629,12 +659,14 @@
     opacity:0.5;
   }
 
+  /* active state */
   .register-input:focus ~ .highlight {
     -webkit-animation:inputHighlighter 0.3s ease;
     -moz-animation:inputHighlighter 0.3s ease;
     animation:inputHighlighter 0.3s ease;
   }
 
+  /* ANIMATIONS ================ */
   @-webkit-keyframes inputHighlighter {
       from { background:#fc3; }
     to    { width:0; background:transparent; }
