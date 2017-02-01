@@ -175,6 +175,9 @@
 								<span class="bar"></span>
 								<label class="label-register">Lokalizacja</label>
 							</div>
+							<div class="button-register">
+									Zarejestruj się
+							</div>
 						</form>
 					</div>
 				</div>

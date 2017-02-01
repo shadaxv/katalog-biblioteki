@@ -543,10 +543,11 @@
   {
 
     width: 100%;
-    background: url(../img/slider.jpg);
+    background: url(../img/register.jpg);
     height: auto;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-size: cover;
   }
 
 
@@ -585,6 +586,27 @@
     -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
   }
+  .button-register        {
+    border: 1px solid white;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 4px;
+    position:relative;
+    background-color: transparent;
+    text-transform:uppercase;
+  }
+  .button-register:hover
+  {
+    border: 2px solid #fc3;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 9px;
+
+  }
+
+
 
   /* active state */
   .register-input:focus ~ .label-register,  input:valid ~ .label-register        {
