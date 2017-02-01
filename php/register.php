@@ -76,8 +76,8 @@
 								<div class="account-btn">
 									<ul class="account-menu">
 										<li style="display: none;"><a href="">Witaj $usernname</a></li>
-										<li><a href="#" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
-										<li><a href="login.php">ZALOGUJ SIĘ</a></li>
+										<li><a href="register.php" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
+										<li><a href="">ZALOGUJ SIĘ</a></li>
 									</ul>
 									<div style="clear; both"></div>
 								</div>
@@ -88,7 +88,7 @@
 					<div style="clear; both"></div>
 
 					<div class="search-nav">
-						<div class="logo-div"><a href="../index.php"><div class="logo"></div><span style="padding-left: 5px;">&nbsp;BIBLIOTEKA&nbsp;</span><span>ON-LINE</span></a></div>
+						<div class="logo-div"><a href="#"><div class="logo"></div><span style="padding-left: 5px;">&nbsp;BIBLIOTEKA&nbsp;</span><span>ON-LINE</span></a></div>
 						<div class="search-input"><input type="text" placeholder="Wpisz tytuł, nazwę autora, rok wydania lub wydawnictwo"><a href="#"></a></div>
 						<div class="order">order</div>
 					</div>
@@ -101,7 +101,7 @@
 						  <li class="hvr-shutter-out-vertical"><a href="kontakt.php"><div>KONTAKT</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="partner.php"><div>WSPÓŁPRACA</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="onas.php"><div>O NAS</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="sklep.php"><div>SKLEP</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="#"><div>SKLEP</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="katalog.php"><div>KATALOG</div></a></li>
 						</ul>
 					</div>
@@ -109,24 +109,75 @@
 
 				</header>
 
-				<div class="main-slider">
-					<div class="slider-shadow">
-            <div class="slider-text">
-    					“Dobra książka to rodzaj alkoholu - też idzie do głowy”<span style="font-size: 12px; font-weight: 600;"> XD</span><br>
-    					<span style="font-weight: 400; font-size: 24px">Magdalena Samozwaniec</span>
-              <ul class="slider-button">
-                <li><a href="">ZAŁÓŻ KONTO</a></li>
-              </ul>
-            </div>
+				<div class="register-slider">
+					<div class="register">
+						<form class="register-form">
+
+							<div class="group">
+								<input class="register-input" type="text" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register">Imie</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="text" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register" >Nazwisko</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="text" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register">Nazwa użytkownika</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="password" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register" >Hasło</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="password" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register" >Powtórz hasło</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="text" placeholder=" " onfocus="(this.type='date')" onblur="(this.type='text')" id="input-data" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register" >Data</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="email" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register" >E-mail</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="tel" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register">Numer telefonu</label>
+							</div>
+
+							<div class="group">
+								<input class="register-input" type="text" required>
+								<span class="highlight"></span>
+								<span class="bar"></span>
+								<label class="label-register">Lokalizacja</label>
+							</div>
+						</form>
 					</div>
 				</div>
-
-        container
-
-		</div>
-
-		<div class="noentry"><div class="noentrymsg">Nie obsługujemy urządzeń poniżej 290px <br> Kup sobie normalny telefon biedaku XDD</div></div>
-
-	</body>
-
+			</div>
+		</body>
 </html>
