@@ -12,6 +12,7 @@
     -ms-user-select: none; /* Internet Explorer/Edge */
     user-select: none; /* Non-prefixed version, currently not supported by any browser */
     cursor:default;
+    background: url(../img/dimension.png) repeat;
   }
 
   *:focus, *:hover, *:active
@@ -705,9 +706,10 @@
     background-repeat: no-repeat;
     box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
   }
-.container{
-  box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
-}
+  .container{
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
+    width: 80%;
+  }
   .news-article h1
   {
     text-align: center;
@@ -746,8 +748,95 @@
     max-height: none;
   }
 
+  footer
+  {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #e6e6e6;
+  }
 
-} /* Define mobile styles */
+  .footer__left
+  {
+    width: 80%;
+    background: #2f2f2f;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .footer__left__column
+  {
+    margin: 0 auto;
+    list-style-type: none;
+    text-align: center;
+    flex: 1 auto;
+    padding: 20px;
+  }
+
+  .footer__left__column h1
+  {
+    margin: 0 auto;
+  }
+
+  .footer__left__column a {
+   text-decoration: none;
+   color: white;
+  }
+
+  .footer__left__column a:hover {
+    color: #ccc;
+  }
+
+  .footer__right
+  {
+    width: 20%;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 10px 0px 30px;
+  }
+
+  .footer__right picture
+  {
+    max-width: 80%;
+    margin: 0 auto;
+  	display: block;
+  }
+
+  .footer__right img
+  {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (max-width: 860px)
+{
+  .footer__left
+  {
+    width: 100%;
+  }
+  .footer__right
+  {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1600px)
+{
+  .container{
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1400px)
+{
+  .container{
+    width: 100%;
+  }
+}
 
 @media only screen and (max-width: 640px)
 {

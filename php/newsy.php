@@ -197,6 +197,8 @@
 					</article>
 				</section>
 
+				<?php include 'footer.php';?>
+
 		</div>
 
 		<div class="noentry"><div class="noentrymsg">Nie obsługujemy urządzeń poniżej 290px <br> Kup sobie normalny telefon biedaku XDD</div></div>

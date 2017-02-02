@@ -121,7 +121,7 @@
 					</div>
 				</div>
 
-        container
+      	<?php include 'footer.php';?>
 
 		</div>
 
