@@ -20,6 +20,8 @@
     outline: 0;
   }
 
+  * {box-sizing: border-box;}
+
   input::-moz-focus-inner {
     border: 0;
   }
@@ -323,7 +325,8 @@
 
 
   /* Shutter Out Vertical */
-  .hvr-shutter-out-vertical {
+  .hvr-shutter-out-vertical
+  {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -336,7 +339,9 @@
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
   }
-  .hvr-shutter-out-vertical:before {
+
+  .hvr-shutter-out-vertical:before
+  {
     content: "";
     position: absolute;
     z-index: -1;
@@ -357,11 +362,15 @@
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
-  .hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active {
+
+  .hvr-shutter-out-vertical:hover, .hvr-shutter-out-vertical:focus, .hvr-shutter-out-vertical:active
+  {
     color: white;
     border-radius: 3px;
   }
-  .hvr-shutter-out-vertical:hover:before, .hvr-shutter-out-vertical:focus:before, .hvr-shutter-out-vertical:active:before {
+
+  .hvr-shutter-out-vertical:hover:before, .hvr-shutter-out-vertical:focus:before, .hvr-shutter-out-vertical:active:before
+  {
     -webkit-transform: scaleY(1);
     transform: scaleY(1);
     border-radius: 3px;
@@ -401,7 +410,8 @@
     transform: translateY(-50%);
   }
 
-  ul.slider-button {
+  ul.slider-button
+  {
       list-style-type: none;
       margin: 0 auto;
       margin-top: 20px;
@@ -409,7 +419,8 @@
       overflow: hidden;
   }
 
-  ul.slider-button li a {
+  ul.slider-button li a
+  {
       display: inline-block;
       color: #fff;
       text-align: center;
@@ -431,6 +442,7 @@
 
   .slider-login-form
   {
+    max-width: 100%;
     margin: 0 auto;
     font-size: 28px;
     position: relative;
@@ -442,6 +454,7 @@
 
   .slider-login-form input
   {
+    max-width: 90%;
     display: block;
     float: right;
     margin: 6px auto;
@@ -497,6 +510,7 @@
     margin: 0 auto;
     width: 500px;
     font-family: Lato, sans-serif;
+    max-width: 90%;
   }
   .slider-login-form input[type="submit"]
   {
@@ -510,19 +524,9 @@
     cursor: pointer;
   }
 
-  * {box-sizing: border-box;}
-
-  .rejestracja      {
-    font-family:'Roboto';
-    width:600px;
-    margin:30px auto 0;
-    display:block;
-    background:#FFF;
-    padding:10px 50px 50px;
-    box-sizing: border-box;
-  }
   .register
     {
+      max-width: 90%;
       margin:20px auto;
       width:500px;
       text-align: center;
@@ -534,11 +538,17 @@
 
   .register-form
   {
+    max-width: 90%;
     display: inline-block;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 2em;
+  }
 
+  .register-form h1
+  {
+    color: white;
+    text-transform:uppercase;
+    margin: 1em 0;
   }
 
   .register-slider
@@ -552,11 +562,8 @@
     background-size: cover;
   }
 
-
-
-
-  /* form starting stylings ------------------------------- */
-  .group            {
+  .group
+  {
     position:relative;
     margin-bottom:30px;
     margin-top:20px;
@@ -564,19 +571,22 @@
     margin-right: auto;
     text-align: center;
   }
-  .register-input               {
+
+  .register-input
+  {
+    max-width: 100%;
     font-size:18px;
     padding:10px 10px 10px 5px;
     display:block;
     width:300px;
     border:none;
     border-bottom:1px solid #757575;
-
   }
-  .register-input:focus         { outline:none; }
 
-  /* LABEL ======================================= */
-  .label-register              {
+  .register-input:focus { outline:none; }
+
+  .label-register
+  {
     color:#999;
     font-size:18px;
     font-weight:normal;
@@ -588,7 +598,11 @@
     -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
   }
-  .button-register        {
+
+  .button-register
+  {
+    max-width: 100%;
+    width: 300px;
     border: 1px solid white;
     color: white;
     margin: auto;
@@ -599,7 +613,8 @@
     background-color: transparent;
     text-transform:uppercase;
   }
-  .button-register:hover
+
+  .button-register:hover, .button-register:focus, .button-register:active
   {
     border: 2px solid #fc3;
     border-radius: 5px;
@@ -608,10 +623,8 @@
 
   }
 
-
-
-  /* active state */
-  .register-input:focus ~ .label-register,  input:valid ~ .label-register        {
+  .register-input:focus ~ .label-register,  input:valid ~ .label-register
+  {
     top:-20px;
     font-size:14px;
     color:#fc3;
@@ -624,9 +637,10 @@
     color:#fc3;
   }
 
-  /* BOTTOM BARS ================================= */
-  .bar    { position:relative; display:block; width:300px; }
-  .bar:before, .bar:after     {
+  .bar    { max-width: 100%; position:relative; display:block; width:300px; }
+
+  .bar:before, .bar:after
+  {
     content:'';
     height:4px;
     width:0;
@@ -637,20 +651,24 @@
     -moz-transition:0.2s ease all;
     -webkit-transition:0.2s ease all;
   }
-  .bar:before {
+
+  .bar:before
+  {
     left:50%;
   }
-  .bar:after {
+
+  .bar:after
+  {
     right:50%;
   }
 
-  /* active state */
-  .register-input:focus ~ .bar:before, input:focus ~ .bar:after {
+  .register-input:focus ~ .bar:before, input:focus ~ .bar:after
+  {
     width:50%;
   }
 
-  /* HIGHLIGHTER ================================== */
-  .highlight {
+  .highlight
+  {
     position:absolute;
     height:60%;
     width:100px;
@@ -660,8 +678,8 @@
     opacity:0.5;
   }
 
-  /* active state */
-  .register-input:focus ~ .highlight {
+  .register-input:focus ~ .highlight
+  {
     -webkit-animation:inputHighlighter 0.3s ease;
     -moz-animation:inputHighlighter 0.3s ease;
     animation:inputHighlighter 0.3s ease;
@@ -706,10 +724,13 @@
     background-repeat: no-repeat;
     box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
   }
-  .container{
+
+  .container
+  {
     box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
     width: 80%;
   }
+
   .news-article h1
   {
     text-align: center;
@@ -782,12 +803,14 @@
     margin: 0 auto;
   }
 
-  .footer__left__column a {
+  .footer__left__column a
+  {
    text-decoration: none;
    color: white;
   }
 
-  .footer__left__column a:hover {
+  .footer__left__column a:hover
+  {
     color: #ccc;
   }
 
@@ -949,6 +972,26 @@
   {
     min-width: 80%;
   }
+  .slider-login-form input, .slider-login-form label
+  {
+    float: none;
+    width: 293px;
+  }
+  .slider-login-form label
+  {
+    width: 280px;
+    max-width: 85%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  input.button-login
+  {
+    margin-top: 15px;
+    width: 293px;
+    max-width: 90%;
+  }
+
 } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
 
 @media only screen and (max-width: 450px)
