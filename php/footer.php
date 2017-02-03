@@ -38,3 +38,6 @@
 
   <div style="clear: both"></div>
 </footer>
+
+
+<script src="../js/code.js"></script>

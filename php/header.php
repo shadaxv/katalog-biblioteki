@@ -35,3 +35,4 @@
   <div class="order">order</div>
 </div>
 <div style="clear: both"></div>
+<div class="spacer"></div>

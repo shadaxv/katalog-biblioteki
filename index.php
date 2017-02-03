@@ -94,8 +94,9 @@
 					</div>
 					<div style="clear: both"></div>
 
-					<div class="menu-div">
-						<ul class="menu">
+					<div class="spacer"></div>
+					<div class="menu-div" id="menu-div">
+						<ul class="menu" id="menu">
 						  <li class="hvr-shutter-out-vertical"><a href="#" style="background-color: #fc3; color: white;"><div>HOME</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="php/newsy.php"><div>NEWSY</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="php/kontakt.php"><div>KONTAKT</div></a></li>
@@ -165,6 +166,8 @@
 		</div>
 
 		<div class="noentry"><div class="noentrymsg">Nie obsługujemy urządzeń poniżej 290px <br> Kup sobie normalny telefon biedaku XDD</div></div>
+
+		<script src="js/code.js"></script>
 
 	</body>
 

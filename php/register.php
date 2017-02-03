@@ -58,8 +58,8 @@
 
 					<?php include 'header.php'; ?>
 
-					<div class="menu-div">
-						<ul class="menu">
+					<div class="menu-div" id="menu-div">
+						<ul class="menu" id="menu">
 						  <li class="hvr-shutter-out-vertical"><a href="../index.php"><div>HOME</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="newsy.php"><div>NEWSY</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="kontakt.php"><div>KONTAKT</div></a></li>
@@ -78,35 +78,35 @@
 						<form class="register-form" >
 							<h1>rejestracja</h1>
 							<div class="group">
-								<input class="register-input" type="text" required>
+								<input id="imie" class="register-input" type="text" pattern=".{6,}" placeholder=" " required>
 								<span class="highlight"></span>
 								<span class="bar"></span>
 								<label class="label-register">Imie</label>
 							</div>
 
 							<div class="group">
-								<input class="register-input" type="text" required>
+								<input id="nazwisko" class="register-input" type="text" pattern=".{6,}" placeholder=" " required>
 								<span class="highlight"></span>
 								<span class="bar"></span>
 								<label class="label-register" >Nazwisko</label>
 							</div>
 
 							<div class="group">
-								<input class="register-input" type="text" required>
+								<input id="login" class="register-input" type="text" pattern=".{3,}" placeholder=" " required>
 								<span class="highlight"></span>
 								<span class="bar"></span>
 								<label class="label-register">Nazwa użytkownika</label>
 							</div>
 
 							<div class="group">
-								<input class="register-input" type="password" required>
+								<input id="password" class="register-input" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder=" " required>
 								<span class="highlight"></span>
 								<span class="bar"></span>
 								<label class="label-register" >Hasło</label>
 							</div>
 
 							<div class="group">
-								<input class="register-input" type="password" required>
+								<input id="repeat-pawssword" class="register-input" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" placeholder=" " required>
 								<span class="highlight"></span>
 								<span class="bar"></span>
 								<label class="label-register" >Powtórz hasło</label>
@@ -116,29 +116,37 @@
 								<input class="register-input" type="text" placeholder=" " onfocus="(this.type='date')" onblur="(this.type='text')" id="input-data" required>
 								<span class="highlight"></span>
 								<span class="bar"></span>
-								<label class="label-register" >Data</label>
+								<label class="label-register" >Data urodzenia</label>
 							</div>
 
 							<div class="group">
-								<input class="register-input" type="email" required>
+								<input id="email" class="register-input" type="email" placeholder=" " required>
 								<span class="highlight"></span>
 								<span class="bar"></span>
 								<label class="label-register" >E-mail</label>
 							</div>
 
 							<div class="group">
-								<input class="register-input" type="tel" required>
+								<input id="tel" class="register-input" type="tel" pattern="[/^+(0-9)$/]{9,14}" placeholder=" " required>
 								<span class="highlight"></span>
 								<span class="bar"></span>
 								<label class="label-register">Numer telefonu</label>
 							</div>
 
 							<div class="group">
-								<input class="register-input" type="text" required>
+								<input id="country-input" class="register-input" pattern="[a-zA-Z]+[a-zA-Z\s]+"list="country" placeholder=" " required>
 								<span class="highlight"></span>
 								<span class="bar"></span>
-								<label class="label-register">Lokalizacja</label>
+								<label class="label-register">Państwo</label>
 							</div>
+
+							<datalist id="country">
+							  <option value="Azerbejdżan">
+							  <option value="W Polsce jak w lesie">
+							  <option value="Google Chrome">
+							  <option value="Haiti">
+							  <option value="Safari">
+							</datalist>
 
 							<input type="submit" class="button-register" value="Zarejestruj się">
 
@@ -147,7 +155,11 @@
 				</div>
 
 				<?php include 'footer.php';?>
+				<script src="../js/register-validation.js"></script>
 
 			</div>
+
+			<div class="noentry"><div class="noentrymsg">Nie obsługujemy urządzeń poniżej 290px <br> Kup sobie normalny telefon biedaku XDD</div></div>
+
 		</body>
 </html>

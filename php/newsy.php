@@ -58,8 +58,8 @@
 
 					<?php include 'header.php'; ?>
 
-					<div class="menu-div">
-						<ul class="menu">
+					<div class="menu-div" id="menu-div">
+						<ul class="menu" id="menu">
 						  <li class="hvr-shutter-out-vertical"><a href="../index.php"><div>HOME</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="#" style="background-color: #fc3; color: white;"><div>NEWSY</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="kontakt.php"><div>KONTAKT</div></a></li>
