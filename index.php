@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="css/fontello.css?v1.0">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&subset=latin-ext" rel="stylesheet">
-		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Chrome, Firefox OS, Opera and Vivaldi bar color -->
 		<meta name="theme-color" content="#0062a6">
