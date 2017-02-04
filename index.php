@@ -47,10 +47,17 @@
 		<!-- IKONY -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>$('html').addClass('js');</script>
 
 	</head>
 
 	<body>
+
+		<div id="loader-wrapper">
+	    <div class="load">
+	      <hr><hr><hr><hr>
+	    </div>
+	  </div>
 
 		<div class="container">
 
@@ -168,6 +175,7 @@
 		<div class="noentry"><div class="noentrymsg">Nie obsługujemy urządzeń poniżej 290px <br> Kup sobie normalny telefon biedaku XDD</div></div>
 
 		<script src="js/code.js"></script>
+		<script src="js/preloader.js"></script>
 
 	</body>
 
