@@ -1,6 +1,3 @@
-$(document).ready(function() {
-  setTimeout(
-    function() {
-      $("#loader-wrapper").fadeOut();
-    }, 2000);
+$(window).on("load", function() {
+    $("#loader-wrapper").fadeOut();
 });
