@@ -20,13 +20,13 @@
 
 					<div class="menu-div" id="menu-div">
 						<ul class="menu" id="menu">
-						  <li class="hvr-shutter-out-vertical"><a href="../index.php"><div>HOME</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="newsy.php"><div>NEWSY</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="kontakt.php"><div>KONTAKT</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="partner.php"><div>WSPÓŁPRACA</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="onas.php"><div>O NAS</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="./"><div>HOME</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="newsy"><div>NEWSY</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="kontakt"><div>KONTAKT</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="wspolpraca"><div>WSPÓŁPRACA</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="o-nas"><div>O NAS</div></a></li>
 						  <li class="hvr-shutter-out-vertical"><a href="#"><div>SKLEP</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="katalog.php"><div>KATALOG</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="katalog"><div>KATALOG</div></a></li>
 						</ul>
 					</div>
 					<div style="clear; both"></div>

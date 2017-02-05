@@ -83,8 +83,8 @@
 								<div class="account-btn">
 									<ul class="account-menu">
 										<li style="display: none;"><a href="">Witaj $usernname</a></li>
-										<li><a href="php/register.php" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
-										<li><a href="php/login.php">ZALOGUJ SIĘ</a></li>
+										<li><a href="rejestracja" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
+										<li><a href="logowanie">ZALOGUJ SIĘ</a></li>
 									</ul>
 									<div style="clear; both"></div>
 								</div>
@@ -105,12 +105,12 @@
 					<div class="menu-div" id="menu-div">
 						<ul class="menu" id="menu">
 						  <li class="hvr-shutter-out-vertical"><a href="#" style="background-color: #fc3; color: white;"><div>HOME</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/newsy.php"><div>NEWSY</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/kontakt.php"><div>KONTAKT</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/partner.php"><div>WSPÓŁPRACA</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/onas.php"><div>O NAS</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/sklep.php"><div>SKLEP</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/katalog.php"><div>KATALOG</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="newsy"><div>NEWSY</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="kontakt"><div>KONTAKT</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="wspolpraca"><div>WSPÓŁPRACA</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="o-nas"><div>O NAS</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="sklep"><div>SKLEP</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="katalog"><div>KATALOG</div></a></li>
 						</ul>
 					</div>
 					<div style="clear; both"></div>
@@ -123,7 +123,7 @@
     					“Dobra książka to rodzaj alkoholu - też idzie do głowy”<span style="font-size: 12px; font-weight: 600;"> XD</span><br>
     					<span style="font-weight: 400; font-size: 24px">Magdalena Samozwaniec</span>
               <ul class="slider-button">
-                <li><a href="php/register.php">ZAŁÓŻ KONTO</a></li>
+                <li><a href="rejestracja">ZAŁÓŻ KONTO</a></li>
               </ul>
             </div>
 					</div>
