@@ -14,7 +14,7 @@
 		<link rel="stylesheet" href="css/fontello.css?v1.0">
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&subset=latin-ext" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600&subset=latin-ext" rel="stylesheet">
-		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Chrome, Firefox OS, Opera and Vivaldi bar color -->
 		<meta name="theme-color" content="#0062a6">
@@ -47,10 +47,17 @@
 		<!-- IKONY -->
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>$('html').addClass('js');</script>
 
 	</head>
 
 	<body>
+
+		<div id="loader-wrapper">
+	    <div class="load">
+	      <hr><hr><hr><hr>
+	    </div>
+	  </div>
 
 		<div class="container">
 
@@ -76,8 +83,8 @@
 								<div class="account-btn">
 									<ul class="account-menu">
 										<li style="display: none;"><a href="">Witaj $usernname</a></li>
-										<li><a href="php/register.php" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
-										<li><a href="php/login.php">ZALOGUJ SIĘ</a></li>
+										<li><a href="rejestracja" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
+										<li><a href="logowanie">ZALOGUJ SIĘ</a></li>
 									</ul>
 									<div style="clear; both"></div>
 								</div>
@@ -94,15 +101,16 @@
 					</div>
 					<div style="clear: both"></div>
 
-					<div class="menu-div">
-						<ul class="menu">
+					<div class="spacer"></div>
+					<div class="menu-div" id="menu-div">
+						<ul class="menu" id="menu">
 						  <li class="hvr-shutter-out-vertical"><a href="#" style="background-color: #fc3; color: white;"><div>HOME</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/newsy.php"><div>NEWSY</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/kontakt.php"><div>KONTAKT</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/partner.php"><div>WSPÓŁPRACA</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/onas.php"><div>O NAS</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/sklep.php"><div>SKLEP</div></a></li>
-						  <li class="hvr-shutter-out-vertical"><a href="php/katalog.php"><div>KATALOG</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="newsy"><div>NEWSY</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="kontakt"><div>KONTAKT</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="wspolpraca"><div>WSPÓŁPRACA</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="o-nas"><div>O NAS</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="sklep"><div>SKLEP</div></a></li>
+						  <li class="hvr-shutter-out-vertical"><a href="katalog"><div>KATALOG</div></a></li>
 						</ul>
 					</div>
 					<div style="clear; both"></div>
@@ -115,7 +123,7 @@
     					“Dobra książka to rodzaj alkoholu - też idzie do głowy”<span style="font-size: 12px; font-weight: 600;"> XD</span><br>
     					<span style="font-weight: 400; font-size: 24px">Magdalena Samozwaniec</span>
               <ul class="slider-button">
-                <li><a href="php/register.php">ZAŁÓŻ KONTO</a></li>
+                <li><a href="rejestracja">ZAŁÓŻ KONTO</a></li>
               </ul>
             </div>
 					</div>
@@ -165,6 +173,9 @@
 		</div>
 
 		<div class="noentry"><div class="noentrymsg">Nie obsługujemy urządzeń poniżej 290px <br> Kup sobie normalny telefon biedaku XDD</div></div>
+
+		<script src="js/code.js"></script>
+		<script src="js/preloader.js"></script>
 
 	</body>
 

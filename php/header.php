@@ -18,8 +18,8 @@
       <div class="account-btn">
         <ul class="account-menu">
           <li style="display: none;"><a href="">Witaj $usernname</a></li>
-          <li><a href="register.php" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
-          <li><a href="login.php">ZALOGUJ SIĘ</a></li>
+          <li><a href="rejestracja" style="border: 2px solid #fc3; border-radius: 5px; font-weight: 600;">ZAREJESTRUJ SIĘ</a></li>
+          <li><a href="logowanie">ZALOGUJ SIĘ</a></li>
         </ul>
         <div style="clear; both"></div>
       </div>
@@ -30,8 +30,9 @@
 <div style="clear; both"></div>
 
 <div class="search-nav">
-  <div class="logo-div"><a href="../index.php"><div class="logo"></div><span style="padding-left: 5px;">&nbsp;BIBLIOTEKA&nbsp;</span><span>ON-LINE</span></a></div>
+  <div class="logo-div"><a href="./"><div class="logo"></div><span style="padding-left: 5px;">&nbsp;BIBLIOTEKA&nbsp;</span><span>ON-LINE</span></a></div>
   <div class="search-input"><input type="text" placeholder="Wpisz tytuł, nazwę autora, rok wydania lub wydawnictwo"><a href="#"></a></div>
   <div class="order">order</div>
 </div>
 <div style="clear: both"></div>
+<div class="spacer"></div>

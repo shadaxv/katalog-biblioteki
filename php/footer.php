@@ -31,10 +31,14 @@
 
   <div class="footer__right">
     <picture>
-      <source srcset="../img/ulani.png">
-      <img src="../img/ulani.png" alt="">
+      <source srcset="img/ulani.png">
+      <img src="img/ulani.png" alt="">
     </picture>
   </div>
 
   <div style="clear: both"></div>
 </footer>
+
+
+<script src="js/code.js"></script>
+<script src="js/preloader.js"></script>
