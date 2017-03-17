@@ -33,16 +33,30 @@
 
 				</header>
 
-				<div class="main-slider">
-					<div class="slider-shadow">
-            <div class="slider-text">
-    					“Dobra książka to rodzaj alkoholu - też idzie do głowy”<span style="font-size: 12px; font-weight: 600;"> XD</span><br>
-    					<span style="font-weight: 400; font-size: 24px">Magdalena Samozwaniec</span>
-              <ul class="slider-button">
-                <li><a href="rejestracja">ZAŁÓŻ KONTO</a></li>
-              </ul>
-            </div>
-					</div>
+				<div class="contact-container">
+					<form id="contact-form" class="contact-form-style">
+						<h1>Napisz do nas.</h1>
+						<h2>Wypełnij formularz, odpowiemy w przeciągu 24 godzin.</h2>
+						<div>
+							<label>
+								<span>Imię</span>
+								<input type="text" name="" value="" tabindex="1" required>
+							</label>
+						</div>
+						<div>
+							<label>
+								<span>Email</span>
+								<input type="email" name="" value="" tabindex="2" required>
+							</label>
+						</div>
+						<div>
+							<label>
+								<span>Wiadomość</span>
+								<textarea  rows="7" name="" value="" tabindex="3" required></textarea>
+							</label>
+						</div>
+						<input type="submit" tabindex="4" class="button-contact" value="Wyślij wiadomość">
+					</form>
 				</div>
 
         <?php include 'footer.php';?>

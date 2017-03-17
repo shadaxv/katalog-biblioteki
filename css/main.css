@@ -944,6 +944,91 @@
     display: block;
   }
 
+  .contact-container
+  {
+
+    text-align: center;
+    background-color: white;
+    background-image: url(../img/upfeathers.png);
+  }
+
+  .contact-form-style
+  {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+  }
+
+  .contact-container .contact-form-style h1
+  {
+    color: #fc3;
+
+  }
+
+  .contact-container .contact-form-style h2
+  {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    color: #777;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .contact-container .contact-form-style span
+  {
+    display:block;
+    text-align: left;
+    margin-bottom: 0.7rem;
+    margin-top: 1.4rem;
+    color: #333;
+  }
+
+  .contact-container .contact-form-style div
+  {
+    width: 500px;
+    margin:0 auto;
+    max-width: 90%;
+  }
+
+  .contact-container .contact-form-style input, .contact-container .contact-form-style textarea
+  {
+    border-radius: 4px;
+    border: 1px solid #777;
+    padding: 6px 6px;
+    font-size: 1rem;
+    width: 500px;
+    max-width: 100%;
+  }
+  .contact-container .contact-form-style input.button-contact
+  {
+    background-color: #fc3;
+    color: white;
+    width: 250px;
+    max-width: 100%;
+    padding:12px 24px;
+    padding-bottom: 8px;
+    border-radius: 4px;
+    border: 0;
+    border-bottom: 4px solid #ffbf00;
+    text-transform: uppercase;
+    margin-top: 1.4rem;
+    cursor: pointer;
+  }
+  .contact-container .contact-form-style input.button-contact:hover, .contact-container .contact-form-style input.button-contact:focus
+  {
+    background-color: #ffbf00;
+    border-color: #e6ac00;
+    -webkit-transition: background-color 200ms linear, border-color 200ms linear;
+    -ms-transition: background-color 200ms linear, border-color 200ms linear;
+    transition: background-color 200ms linear, border-color 200ms linear;
+  }
+  .contact-container .contact-form-style input.button-contact:active
+  {
+    border-bottom: 2px solid #e6ac00;
+    margin-top: calc(1.4rem + 2px);
+    background-color: #ffbf00;
+  }
+
 }
 
 @media only screen and (max-width: 860px)
