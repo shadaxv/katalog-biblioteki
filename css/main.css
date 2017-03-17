@@ -116,6 +116,7 @@
     margin: 0 auto;
     background-color: rgb(237, 239, 237);
     max-width: 1920px;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
   }
 
   header
@@ -123,7 +124,6 @@
     width: 100%;
     margin: 0 auto;
     background-color: #fff;
-    box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.3);
   }
 
   .account-nav
