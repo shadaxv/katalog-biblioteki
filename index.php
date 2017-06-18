@@ -130,29 +130,29 @@
 				</div>
 
 				<footer>
-					<div class="footer__left">
-						<ol class="footer__left__column">
+					<div class="footer">
+						<ol class="footer__column">
 							<h1>Pierwsza</h1>
 							<li><a href="#">Jeden link</a></li>
 							<li><a href="#">Drugi link</a></li>
 							<li><a href="#">Trzeci link</a></li>
 						</ol>
 
-						<ol class="footer__left__column">
+						<ol class="footer__column">
 							<h1>Druga</h1>
 							<li><a href="#">Jeden link</a></li>
 							<li><a href="#">Drugi link</a></li>
 							<li><a href="#">Trzeci link</a></li>
 						</ol>
 
-						<ol class="footer__left__column">
+						<ol class="footer__column">
 							<h1>Trzecia</h1>
 							<li><a href="#">Jeden link</a></li>
 							<li><a href="#">Drugi link</a></li>
 							<li><a href="#">Trzeci link</a></li>
 						</ol>
 
-						<ol class="footer__left__column">
+						<ol class="footer__column">
 							<h1>Czwarta</h1>
 							<li><a href="#">Jeden link</a></li>
 							<li><a href="#">Drugi link</a></li>
@@ -160,19 +160,12 @@
 						</ol>
 					</div>
 
-					<div class="footer__right">
-						<picture>
-							<source srcset="img/ulani.png">
-							<img src="img/ulani.png" alt="">
-						</picture>
-					</div>
-
 					<div style="clear: both"></div>
 				</footer>
 
 		</div>
 
-		<div class="noentry"><div class="noentrymsg">Nie obsługujemy urządzeń poniżej 290px <br> Kup sobie normalny telefon biedaku XDD</div></div>
+		<div class="noentry"><div class="noentrymsg">Nie obsługujemy urządzeń poniżej 290px</div></div>
 
 		<script src="js/code.js"></script>
 		<script src="js/preloader.js"></script>
