@@ -5,12 +5,12 @@ Szkolny projekt katalogu biblioteki - Projekt aktualnie nie rozwijany
 
 * Technologie
     * HTML5
-    * CSS3
-    * JavaScript
-    * PHP
+    * CSS3
+    * JavaScript
+    * PHP
 * Narzędzia
-    * Git
-    * Atom
+    * Git
+    * Atom
 
 ## Weraja live
    [katalog-biblioteki.ga](http://katalog-biblioteki.ga)
@@ -18,6 +18,6 @@ Szkolny projekt katalogu biblioteki - Projekt aktualnie nie rozwijany
 ## Historia wydania
 
 * 1.0.1
-    * Dodano README.md
+    * Dodano README.md
 * 1.0.0
-    * Pierwsza wersja
+    * Pierwsza wersja
