@@ -4,7 +4,7 @@ Szkolny projekt katalogu biblioteki - Projekt aktualnie nie rozwijany
 ## Użyte technologie i narzędzia
 
 * Technologie
-    * HTML5
+    * HTML5
     * CSS3
     * JavaScript
     * PHP
