@@ -12,7 +12,7 @@ Szkolny projekt katalogu biblioteki - Projekt aktualnie nie rozwijany
     * Git
     * Atom
 
-## Weraja live
+## Wersja live
    [katalog-biblioteki.ga](http://katalog-biblioteki.ga)
    
 ## Historia wydania
